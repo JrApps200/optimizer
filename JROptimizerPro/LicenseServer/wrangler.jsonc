@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jr-optimizer-license",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jr-optimizer-licenses",
+      "database_id": "SUBSTITUA_PELO_ID_DO_D1",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "KIWIFY_PRODUCT_ID": ""
+  }
+}
