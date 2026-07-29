@@ -1,0 +1,102 @@
+JR OPTIMIZER PRO 2.0
+====================
+
+IMPORTANTE
+----------
+Esta versão substitui o protótipo inicial. Ela foi feita em uma pasta separada para você testar sem perder a versão antiga.
+O programa solicita administrador automaticamente porque limpeza profunda, desinstalação e serviços exigem permissão elevada.
+
+COMO ABRIR NO VISUAL STUDIO
+---------------------------
+1. Feche o JR Optimizer antigo e o Visual Studio.
+2. Extraia todo o arquivo ZIP para uma pasta normal, por exemplo:
+   Documentos\JR Optimizer Pro 2
+3. Abra o Visual Studio 2022 COMO ADMINISTRADOR.
+4. Clique em “Abrir um projeto ou uma solução”.
+5. Abra o arquivo JROptimizerPro.sln.
+6. Aguarde o Visual Studio carregar.
+7. Clique em Compilação > Recompilar Solução.
+8. Pressione F5 ou clique no botão verde.
+
+COMO GERAR O EXE FINAL
+----------------------
+Opção mais leve para usar neste mesmo notebook:
+1. Feche o programa se estiver aberto.
+2. Dê dois cliques em PUBLICAR_LEVE.bat.
+3. Aguarde aparecer “Publicação concluída”.
+4. Abra a pasta Publicado.
+5. Execute “JR Optimizer Pro.exe”.
+6. Crie um ATALHO para a Área de Trabalho. Não mova só o EXE se a publicação gerar outros arquivos.
+
+Opção portátil para usar em outro computador sem instalar .NET:
+- Execute PUBLICAR_PORTATIL.bat.
+- O arquivo será muito maior e a primeira compilação pode demorar.
+
+PRIMEIRO TESTE RECOMENDADO
+--------------------------
+1. Dashboard: confira CPU e memória.
+2. Limpeza: clique em “Analisar limpeza leve” antes de limpar.
+3. Aplicativos: teste apenas com um aplicativo dispensável.
+4. Inicialização: desative somente programas conhecidos, nunca drivers.
+5. Desempenho: use primeiro o perfil recomendado.
+6. Reinicie o Windows após aplicar o perfil.
+
+FUNÇÕES INCLUÍDAS
+-----------------
+- Navegação lateral funcional e interface responsiva.
+- Dashboard com CPU, RAM, disco e processos mais pesados.
+- Limpeza leve com análise prévia.
+- Limpeza profunda com categorias selecionáveis.
+- Limpeza de componentes do Windows pelo DISM.
+- Desinstalação em massa de programas clássicos e apps da Microsoft Store.
+- Busca conservadora de resíduos após a desinstalação.
+- Quarentena reversível para resíduos, em vez de exclusão imediata.
+- Visualização dos aplicativos padrão e acesso direto às configurações oficiais.
+- Gerenciador reversível de inicialização.
+- Perfil de desempenho recomendado e opções avançadas separadas.
+- Inicialização automática por tarefa agendada com privilégio elevado.
+- Diagnóstico de processos e ferramentas SFC, DISM, CHKDSK e reset de rede.
+- Restauração de configurações, inicialização e quarentena.
+- Logs em C:\ProgramData\JR Optimizer Pro.
+
+LIMITES HONESTOS
+----------------
+- O Windows 11 não permite que aplicativos comuns troquem padrões de navegador/PDF silenciosamente com segurança. Por isso, o programa mostra o padrão atual e abre a tela oficial para você confirmar.
+- Desinstaladores de terceiros podem abrir janelas próprias. O JR Optimizer executa um por vez.
+- Resíduos nunca são marcados automaticamente. Revise as pastas antes de mover para quarentena.
+- Nenhum software elimina a limitação física de um Celeron N4020 com 4 GB de RAM. O programa reduz desperdício e facilita o diagnóstico, mas não cria memória ou processamento.
+JR OPTIMIZER PRO 2.2
+====================
+
+NOVIDADES DA VERSÃO 2.2
+- Ícone de raio com cantos transparentes.
+- Detecção de processador, RAM, núcleos lógicos e bateria.
+- Perfis: Dia a dia, Gamer, Multitarefa, Stream e Economia.
+- Recomendação ajustada à quantidade de memória e categoria do processador.
+- Aba Personalizado para combinar ajustes individualmente.
+- Plano de energia específico para cada perfil.
+- Correção da configuração de Widgets sem a falha AllowNewsAndInterests.
+- Backup e restauração continuam disponíveis.
+
+IMPORTANTE
+Os perfis não desativam Defender, Windows Update, Wi-Fi, áudio ou drivers.
+Após trocar de perfil, reinicie o Windows. Para voltar ao estado original,
+use Desempenho > Restaurar alterações ou Restaurar e logs.
+
+JR OPTIMIZER PRO 2.1
+====================
+
+NOVIDADES
+- Novo ícone JR incorporado ao executável e à janela.
+- Monitor personalizável na bandeja do Windows.
+- Exibição de temperatura, CPU, RAM, processos ou ícone normal.
+- Intervalo de atualização entre 1 e 10 segundos.
+- Minimizar ou fechar para a bandeja.
+- Clique duplo no ícone para reabrir.
+- Menu rápido para pausar, abrir ou sair completamente.
+- Preferências salvas em:
+  C:\ProgramData\JR Optimizer Pro\tray-settings.json
+
+IMPORTANTE SOBRE TEMPERATURA
+Alguns notebooks não fornecem seus sensores ao Windows. Nesses casos,
+o monitor mostra N/D. Se isso acontecer, selecione CPU, RAM ou processos.
