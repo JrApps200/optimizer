@@ -1,16 +1,17 @@
 # JR Optimizer Pro
 
-Aplicativo Windows para diagnóstico, limpeza, gerenciamento de inicialização,
-desinstalação de aplicativos e perfis adaptativos de desempenho.
+Uma ferramenta Windows leve e útil que reúne diagnóstico, limpeza,
+gerenciamento de inicialização, desinstalação de aplicativos e perfis
+adaptativos de desempenho.
 
 ## Download
 
 Baixe a versão mais recente na página **Releases** deste repositório.
-Para a maioria das pessoas, use o pacote:
+Para a maioria das pessoas, use:
 
 `JR-Optimizer-Pro-v2.2.0-Windows-x64-Portable.zip`
 
-A versão portátil inclui o runtime necessário. Extraia o ZIP e execute
+A edição portátil inclui o runtime necessário. Extraia o ZIP e execute
 `JR Optimizer Pro.exe` como administrador.
 
 ## Compatibilidade
