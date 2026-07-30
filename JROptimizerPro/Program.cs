@@ -19,6 +19,18 @@ internal static class Program
         Core.AppPaths.EnsureCreated();
         Core.AppLogger.Info("Aplicativo iniciado.");
 
+        var savedKey = Services.LicenseService.LoadSavedKey();
+        var activated = false;
+        if (!string.IsNullOrWhiteSpace(savedKey))
+            activated = Services.LicenseService.ActivateAsync(savedKey).GetAwaiter().GetResult().Valid;
+
+        if (!activated)
+        {
+            using var activation = new ActivationForm();
+            if (activation.ShowDialog() != DialogResult.OK)
+                return;
+        }
+
         Application.ThreadException += (_, e) =>
         {
             Core.AppLogger.Error("Erro não tratado na interface.", e.Exception);

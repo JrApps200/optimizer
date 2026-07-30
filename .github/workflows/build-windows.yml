@@ -1,0 +1,35 @@
+name: Build Windows Installer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore JROptimizerPro/JROptimizerPro.csproj
+      - name: Publish
+        run: >
+          dotnet publish JROptimizerPro/JROptimizerPro.csproj
+          -c Release -r win-x64 --self-contained true
+          -p:PublishSingleFile=true
+          -p:IncludeNativeLibrariesForSelfExtract=true
+          -o publish
+      - name: Package
+        shell: pwsh
+        run: Compress-Archive -Path publish/* -DestinationPath JR-Optimizer-Pro-Windows.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JR-Optimizer-Pro-Windows
+          path: JR-Optimizer-Pro-Windows.zip
+          if-no-files-found: error
